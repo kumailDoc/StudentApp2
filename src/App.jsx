@@ -1,13 +1,13 @@
-import React from 'react';
-import StudentForm from 'studentapp1/StudentForm';
+import React from "react";
+import ReactDOM from "react-dom";
+import StudentForm from "StudentApp1/StudentForm"
 
-function App() {
-  return (
-    <div className="App">
-      <h1>StudentApp2</h1>
-      <StudentForm />
-    </div>
-  );
-}
+import "./index.css";
 
-export default App;
+const App = () => (
+  <div>
+    <h1>This is Student App 2</h1>
+    <StudentForm></StudentForm>
+  </div>
+);
+ReactDOM.render(<App />, document.getElementById("app"));
